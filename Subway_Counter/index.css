@@ -39,3 +39,7 @@ button {
     background: darkgreen;
 }
 
+#reset-btn {
+    background: yellow;
+    color: green;
+}

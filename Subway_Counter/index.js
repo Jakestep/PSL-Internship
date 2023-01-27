@@ -33,4 +33,8 @@ function increment() {
     console.log(count)
     document.getElementById("count-el").innerText = count
 }
-
+function reset() {
+    console.log("reset button was clicked")
+    count = 0
+    document.getElementById("count-el").innerText = count
+}
