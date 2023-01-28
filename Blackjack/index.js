@@ -11,5 +11,3 @@ let greeting = "Hello, welcome to my website, "
 let name = "jake"
 
 welcomeEl.innerText = greeting + name
-
-console.log("hello")
