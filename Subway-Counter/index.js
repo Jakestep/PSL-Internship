@@ -28,9 +28,7 @@
 let count = 0
 
 function increment() {
-    console.log("The Button was clicked")
     count++
-    console.log(count)
     document.getElementById("count-el").innerText = count
 }
 
