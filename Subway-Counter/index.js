@@ -26,14 +26,18 @@
 
 
 let count = 0
+countEL = document.getElementById("count-el")
 
 function increment() {
     count++
-    document.getElementById("count-el").innerText = count
+    countEL.innerText = count
 }
 
 function reset() {
     count = 0
-    document.getElementById("count-el").innerText = count
+    countEL.innerText = count
 }
 
+function save() {
+    console.log(countEL.innerText)
+}
