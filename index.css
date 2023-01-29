@@ -1,8 +1,27 @@
 body {
+    color: white;
     margin: 0;
+    text-align: center;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
+    background: navy;
+    
+}
+
+#homeScore {
+    background-color: black;
+    color: salmon;
+}
+
+#awayScore {
+    background-color: black;
+    color: salmon;
+}
+#homeTeamButton {
+    background: navy;
+    color: ghostwhite;
+    border-color: ghostwhite;
 }
