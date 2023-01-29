@@ -40,4 +40,6 @@ function reset() {
 
 function save() {
     console.log(countEL.innerText)
+    count = 0
+    countEL.innerText = count
 }
