@@ -25,21 +25,48 @@
 // addTimes(howManyRaces())
 
 
+var today;
+var date;
+var time;
+var dateTime;
+
 let count = 0
-countEL = document.getElementById("count-el")
+let countEl = document.getElementById("count-el")
+
+let saveEl = document.getElementById("save-el")
+let saveElOriginal = saveEl.textContent
 
 function increment() {
     count++
-    countEL.innerText = count
+    countEl.textContent = count
 }
 
 function reset() {
     count = 0
-    countEL.innerText = count
+    countEl.textContent = count
+    saveEl.textContent = saveElOriginal
+
 }
 
+
 function save() {
-    console.log(countEL.innerText)
+    if (saveEl.textContent == saveElOriginal){
+        saveEl.textContent += " " + count
+    }
+    else {
+        saveEl.textContent += " - " + count
+    }
+    today = new Date()
+    date = (today.getMonth() + 1) + "-" + today.getDate() + "-" + today.getFullYear();
+    time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date + "    " + time;
+    console.log(countEl.textContent + " --> " + dateTime)
     count = 0
-    countEL.innerText = count
+    countEl.textContent = count
+}
+function decrement() {
+    if (count > 0){
+        count--
+    }
+    countEl.innerText = count
 }
