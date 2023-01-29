@@ -42,8 +42,6 @@ function increment() {
 }
 
 function reset() {
-    count = 0
-    countEl.textContent = count
     saveEl.textContent = saveElOriginal
 
 }
