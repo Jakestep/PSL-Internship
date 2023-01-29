@@ -8,20 +8,39 @@ body {
     display: flex;
     justify-content: space-around;
     background: navy;
+    background-size: cover;
+    max-width: 100%;
+    margin: auto;
+    border: 3px solid gold;
     
 }
 
 #homeScore {
     background-color: black;
     color: salmon;
+    font-size: 90px;
+    width: 120px;
+    margin: auto;
 }
 
 #awayScore {
     background-color: black;
     color: salmon;
+    font-size: 90px;
+    width: 120px;
+    margin: auto;
 }
 #homeTeamButton {
     background: navy;
     color: ghostwhite;
     border-color: ghostwhite;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+#reset-btn {
+    background: navy;
+    color: white;
+    border-radius: 100%;
+    border-color: hotpink;
 }

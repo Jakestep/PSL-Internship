@@ -21,3 +21,8 @@ function addThree(id) {
     count += 3
     document.getElementById(id).innerText = count
 }
+
+function reset() {
+    document.getElementById("homeScore").textContent = 0
+    document.getElementById("awayScore").textContent = 0
+}
