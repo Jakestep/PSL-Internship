@@ -1,0 +1,48 @@
+body {
+    background-image: url("Blackjack/background.jpg");
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    -webkit-text-stroke: 1px mediumorchid;
+	-webkit-text-fill-color: black;
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 40px;
+    -webkit-text-stroke: 3px mediumorchid;
+	-webkit-text-fill-color: black;
+
+}
+
+#message-el {
+    text-align: center;
+    font-style: italic;
+    
+
+}
+
+button {
+    background-color: fuchsia;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    -webkit-text-stroke:black;
+	-webkit-text-fill-color: black;
+}
+
+#newGame-btn {
+    margin-top: 10px;
+}
+
+img {
+    margin-left: 2px;
+    margin-right: 2px;
+}
