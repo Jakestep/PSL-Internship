@@ -7,6 +7,7 @@ body {
     font-weight: bold;
     -webkit-text-stroke: 1px mediumorchid;
 	-webkit-text-fill-color: black;
+    min-width: 400px;
 }
 
 h1 {

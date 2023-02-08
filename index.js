@@ -7,6 +7,13 @@ Add betting system
 
 */
 
+let player = {
+    name: "Jake",
+    chips: 1000
+}
+
+// let playerEl = document.getElementById('player-el')
+// playerEl.textContent = player.name + ": $" + player.chips
 
 function displayImage(src, width, height) {
     var img = document.createElement("img");
@@ -41,14 +48,7 @@ function getRandomCard() {
     var suit;
     var cardNumber;
     let tempNum;
-    // Gives 21 every time new card is pressed
-    /*
-    if (sum != 0) {
-        let needed = 21 - sum
-        return needed
-    } 
-    return tempNum
-    */
+    
     // TODO When a card is drawn, set the cards value to 0
     // and if it draws a card whos value is 0 draw a different card
     let value = 1
@@ -61,8 +61,8 @@ function getRandomCard() {
             continue
         }
         tempNum = availableCards[suit][cardNumber]
-        availableCards[suit][cardNumber] = 0
-        value = 0
+        // availableCards[suit][cardNumber] = 0
+        break
     }
 
     // If an 11 is drawn and the sum goes over 21, it will be turned into a 1
@@ -139,3 +139,21 @@ function newDeck() {
     console.log(unchangedDeck)
     console.log(availableCards)
 }
+
+// "start-btn">START GAME</button>
+//         <br>
+//         <button id="card-btn">NEW CARD</button>
+//         <br>
+//         <button id="newDeck-btn
+
+document.getElementById("start-btn").addEventListener("click", function() {
+    startGame()
+})
+
+document.getElementById("card-btn").addEventListener('click', function(){
+    newCard()
+})
+
+// document.getElementById("newDeck-btn").addEventListener('click', function(){
+//     newDeck()
+// })
