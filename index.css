@@ -1,0 +1,55 @@
+
+#input-section {
+    background-color: rgb(60, 60, 181);
+    text-align: center;
+    padding: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+h1 {
+    color: white;
+}
+
+#unit-input {
+    background-color: rgb(60, 60, 181);
+    border: 2px solid lightgrey;
+    border-radius: 2px;
+    font-size: 50;
+    max-width: 100px;
+    height: 100px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+#convert-btn {
+    margin: 15px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 10px;
+    border: none;
+    width: 100px;
+}
+
+
+#conversions-section {
+    background-color: #dedede;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#conversion-type {
+    color: purple;
+}
